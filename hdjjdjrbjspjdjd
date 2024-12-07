@@ -4,6 +4,25 @@ for i,v in pairs(game.CoreGui:GetChildren()) do
 	end
 end
 
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 300, 0, 50)
+frame.Position = UDim2.new(0.5, -150, 1, -50)
+frame.BackgroundTransparency = 1
+frame.Parent = screenGui
+
+local youtubeLabel = Instance.new("TextLabel")
+youtubeLabel.Size = UDim2.new(0, 300, 0, 50)
+youtubeLabel.Position = UDim2.new(0.5, -150, 0, 0)
+youtubeLabel.Text = "Youtube: r4mpage"
+youtubeLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+youtubeLabel.BackgroundTransparency = 1
+youtubeLabel.TextSize = 20
+youtubeLabel.TextAlignment = Enum.TextAlignment.Center
+youtubeLabel.Parent = frame
+
 local UiLib = Instance.new("ScreenGui")
 UiLib.Name = "UiLib"
 UiLib.Parent = game.CoreGui
